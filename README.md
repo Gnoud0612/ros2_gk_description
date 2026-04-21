@@ -1,4 +1,27 @@
 # ros2_gk_description
+# Cập nhật danh sách gói của Ubuntu
+sudo apt update
+
+# Cài đặt các công cụ hiển thị và xử lý URDF/Xacro
+sudo apt install -y ros-humble-xacro \
+                    ros-humble-robot-state-publisher \
+                    ros-humble-joint-state-publisher-gui \
+                    ros-humble-rviz2
+
+# Cài đặt môi trường Gazebo và các plugin cảm biến (Lidar, Camera, GPS)
+sudo apt install -y ros-humble-gazebo-ros \
+                    ros-humble-gazebo-plugins
+
+# Cài đặt hệ thống điều khiển động cơ (Bánh xe vi sai & Tay máy)
+sudo apt install -y ros-humble-ros2-control \
+                    ros-humble-ros2-controllers \
+                    ros-humble-gazebo-ros2-control \
+                    ros-humble-teleop-twist-keyboard
+
+# Cài đặt thuật toán Lập bản đồ (SLAM) và Tự hành (Navigation2)
+sudo apt install -y ros-humble-slam-toolbox \
+                    ros-humble-navigation2 \
+                    ros-humble-nav2-bringup
 # Tạo workspace và clone dự án
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
