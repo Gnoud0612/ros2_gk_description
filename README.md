@@ -26,11 +26,13 @@ sudo apt install -y ros-humble-slam-toolbox \
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
 
-# Tải package về, đưa vào trong ros2_ws/src
+# Tải package ros2_gk_description về, đưa vào trong ros2_ws/src
 
 # Lùi ra ngoài thư mục gốc và tiến hành biên dịch
 cd ~/ros2_ws
 colcon build --packages-select ros2_gk_description
+
+# Nạp môi trường mỗi khi mở 1 terminal mới
 source install/setup.bash
 
 # Khởi động mô phỏng gazebo/rviz
