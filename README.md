@@ -26,7 +26,10 @@ sudo apt install -y ros-humble-slam-toolbox \
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
 
-# Tải package về, đưa vào trong ros2_ws/src và biên dịch hệ thống
+# Tải package về, đưa vào trong ros2_ws/src
+
+# Lùi ra ngoài thư mục gốc và tiến hành biên dịch
+cd ~/ros2_ws
 colcon build --packages-select ros2_gk_description
 source install/setup.bash
 
